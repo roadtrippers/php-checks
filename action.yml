@@ -1,0 +1,13 @@
+# action.yml
+name: 'php-checks'
+description: 'Do various php checks'
+inputs:
+  directory:  # id of input
+    description: 'Directory to recurse to find php files'
+    required: false
+    default: "./"
+runs:
+  using: 'docker'
+  image: 'docker://roadtrippers/php-checks:1.0.0'
+  args:
+    - ${{ inputs.directory }}
