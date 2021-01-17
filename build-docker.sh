@@ -3,7 +3,7 @@
 ###
 ## How to run this:
 ## ./build-docker.sh will build image with the SHA of the git repo.
-## ./build-docker.sh 1.0.0 will build image with the SHA of the git repo and also tag it with the specified semver
+## ./build-docker.sh v1.0.0 will build image with the SHA of the git repo and also tag it with the specified semver
 
 set -e
 set -o pipefail
